@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function shri(){
+var ms = (document.getElementById("red").value);
+
+  
+   var rr =(str) => str[0].toUpperCase() + 
+   str.slice(1).toLowerCase();
+  
+   var words = ms.split(' ').map(rr);
+   var cap = words.join(' ');
+   
+ document.getElementById("green").value = cap ;	
+}
+</script>
+</head>
+<body>
+
+Enter the Name = <input id="red"> <br> <br>
+<input type="button" value="CHECK" onclick="shri()"> <br> <br>
+   ANS: <input type="text" id="green"><br> <br>
+</body>
+</html>

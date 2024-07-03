@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> form IN JS</title>
+<script>
+
+function calc(){
+let h = parseInt (document.getElementById("green").value);
+let e = parseInt (document.getElementById("red").value);
+let s = parseInt (document.getElementById("blue").value);
+let m = parseInt (document.getElementById("grey").value);
+
+let sum = h+e+s+m;
+
+
+document.getElementById("result").value = sum ;	
+};	
+</script>
+</head>
+<body>
+
+Rahul marks = <input id="green"> <br> <br>
+
+Aman marks = <input id="red"> <br> <br>
+
+Bhanu marks = <input id="blue"> <br> <br>
+
+Om  marks = <input id="grey"> <br> <br>
+
+
+<input type="button" value="Sum" onclick="calc()"> <br> <br>
+
+Result     : <input type="text" id="result"><br> <br>
+
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> If else fail and pass</title>
+<script> 
+ function percentage(){
+
+var mark = document.getElementById("myNumber").value;
+ 
+if (mark < 33){
+ alert("Fail");
+  }
+
+else if(mark < 70) {
+ alert("B2");
+}
+
+else if (mark < 80) {
+ alert("A2");
+}
+
+else if (mark < 90){
+ alert("A1");
+}
+
+else  {
+ alert("Pass");
+}
+
+}
+ </script>
+</head>
+<body>
+<p>PLEASE ENTER YOUR MARKS</p>
+  <br><br>
+Marks:  <input id="myNumber"> </input> <br><br>
+
+   <button onclick="percentage()">click</button><br><br>
+ 
+</body>
+</html>

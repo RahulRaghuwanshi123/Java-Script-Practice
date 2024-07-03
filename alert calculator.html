@@ -1,0 +1,52 @@
+<html>
+<head>
+<script>
+let a = prompt("Enter your name");
+
+function ram(){
+
+let h = parseInt (document.getElementById("hindi").value);
+let e = parseInt (document.getElementById("english").value);
+let s = parseInt (document.getElementById("science").value);
+let m = parseInt (document.getElementById("maths").value);
+let ss = parseInt (document.getElementById("social science").value);
+let sum = h+e+s+m+ss;
+let percentage = (sum)/5;
+
+ document.getElementById("percent").value = percentage +"%";
+
+ 
+
+if (percentage >=33){
+alert("Pass" +  a);
+}
+
+else {
+alert("fail"+a);
+}
+}
+</script>
+
+</head>
+<body>
+Hindi Marks    : <input type="number" id="hindi"> <br> <br>
+  
+English  Marks : <input type="number" id="english"><br> <br>
+
+Science Marks  : <input type="number" id="science"> <br> <br>
+  
+Maths  Marks   : <input type="number" id="maths"><br> <br>
+
+Social sc Marks : <input type="number" id="social science"><br> <br>
+
+
+<input type="button" value="Percent" onclick="ram()"> <br> <br>
+ 
+Percentage : <input type="text" id="percent"><br><br>
+
+Status : <input type= "text" id ="status"> <br><br>
+   
+
+
+</body>                    
+</html>

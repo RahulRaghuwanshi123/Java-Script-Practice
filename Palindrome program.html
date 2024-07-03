@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function shri(){
+
+  var s = (document.getElementById("red").value);
+  var l = s.length;
+  var m = 'It is Palindrome';
+  for(var i =0; i< l/2; i++){
+   if (s [i]!= s[l-1-i]){
+   m = 'It is not Palindrome';
+}
+}
+document.getElementById("result").value = (`${s}:${m}`);
+
+
+}
+</script>
+</head>
+<body>
+ENTER NAME  = <input id="red"> <br> <br>
+
+<input type="button" value="Sum" onclick="shri()"> <br> <br>
+
+ANS    : <input type="text" id="result"><br> <br>
+
+
+</body>
+</html>

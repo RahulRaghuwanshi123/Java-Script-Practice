@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> form IN JS</title>
+<script>
+function calc(){
+let h =  (document.getElementById("green").value);
+  var a = h.length;
+
+ if (a <10){
+
+ document.write("Minimum Number");
+ 
+}
+ else if(a < 20) {
+ document.write("Average Number");
+}
+
+else {
+  document.write ("Maximum Number");
+}
+}	
+
+</script>
+</head>
+<body>
+ Count Number : <input id="green"> <br> <br>
+<input type="button" value="calculate" onclick="calc()"> <br> <br>
+ 
+</body>
+</html>
+
+

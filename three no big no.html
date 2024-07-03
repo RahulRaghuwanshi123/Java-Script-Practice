@@ -1,0 +1,34 @@
+<html>
+<head>
+<title> Test If else open </title>
+<script>
+ function percentage(){
+
+var ma = parseInt (document.getElementById("myNumber").value);
+var as = parseInt (document.getElementById("pro").value);
+var ca = parseInt (document.getElementById("uno").value);
+
+if (ma > as && ma > ca){
+document.write(ma);
+}
+
+else if (as > ma && as > ca){
+document.write(as)
+
+else {
+  alert(ca);
+}
+}
+ </script>
+</head>
+<body>
+<p>PLEASE ENTER YOUR NUMBERS</p>
+  <br><br>
+NUMBERS:  <input id="myNumber" type="number" />  <br><br>
+NUMBERS:  <input id="pro"type="number"/>  <br><br>
+NUMBERS:  <input id="uno"type="number"/>  <br><br>
+
+   <input type="button" value="click" onclick="percentage()"/><br>
+ 
+</body>
+</html>
